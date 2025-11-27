@@ -11,8 +11,22 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Home Page'),
       ),
-      body: Center(
-        child: ElevatedButton(onPressed: () => Get.toNamed(AppRoutes.video), child: const Text('Go to Video Page')),
+      body: Row(
+        children: [
+          ElevatedButton(
+            onPressed: () {
+              Get.toNamed(AppRoutes.convertVideo);
+            },
+            child: const Text('Convert Video'),
+          ),
+          const SizedBox(width: 20),
+          ElevatedButton(
+            onPressed: () {
+              Get.toNamed(AppRoutes.videogif);
+            },
+            child: const Text('Video to GIF'),
+          ),
+        ],
       ),
     );
   }
