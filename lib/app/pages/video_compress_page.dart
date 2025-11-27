@@ -139,7 +139,7 @@ class _VideoCompressPageState extends State<VideoCompressPage> {
       body: Padding(
         padding: EdgeInsets.all(16),
         child: SingleChildScrollView(
-          child: Column(gi
+          child: Column(
             children: [
               ElevatedButton(
                 onPressed: pickVideo,
