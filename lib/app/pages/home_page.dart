@@ -36,6 +36,12 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Video to Audio'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed(AppRoutes.compressVideo);
+              },
+              child: const Text('Compress Video'),
+            ),
           ],
         ),
       ),
