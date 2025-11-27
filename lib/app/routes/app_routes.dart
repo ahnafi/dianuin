@@ -8,6 +8,6 @@ class AppRoutes {
 
   static final routes = [
     GetPage(name: home, page: () => HomePage()),
-    GetPage(name: video, page: () => VideoPage()),
+    GetPage(name: video, page: () => VideoPage(title: 'Video',)),
   ];
 }
